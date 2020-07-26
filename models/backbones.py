@@ -10,22 +10,11 @@ import torchvision.models as models
 from efficientnet_pytorch import EfficientNet
 from .xception import *
 from .senet import *
-from .regnet_pytorch.regnet import *
-from .resnest_pytorch.resnest import *
 
 try:
     from torch.hub import load_state_dict_from_url
 except ImportError:
     from torch.utils.model_zoo import load_url as load_state_dict_from_url
-
-
-REGNET_PARAMS = {
-    '4.0GF': {
-        'initial_width': 96, 'slope': 38.65, 'quantized_param': 2.43,
-        'network_depth': 23, 'bottleneck_ratio': 1, 'group_width': 40,
-        'stride': 2, 'se_ratio': None
-    }
-}
 
 
 def resnet_mod(base_model, in_channel=3, num_classes=1000, pretrained=False):
