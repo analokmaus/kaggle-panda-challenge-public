@@ -17,7 +17,7 @@ lightgbm==2.2.3
 opencv_python==4.2.0.32
 segmentation_models_pytorch==0.1.0
 numpy==1.16.3
-Pillow==7.1.2
+Pillow==8.3.2
 category_encoders==2.2.2
 japanize_matplotlib==1.0.5
 matplotlib_venn==0.11.5
