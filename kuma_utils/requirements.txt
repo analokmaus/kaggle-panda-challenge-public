@@ -10,7 +10,7 @@ torch==1.1.0
 matplotlib==3.0.3
 torchsummary==1.5.1
 tqdm==4.30.0
-Pillow==7.1.2
+Pillow==9.0.1
 apex==0.9.10dev
 category_encoders==2.2.2
 japanize_matplotlib==1.1.2
